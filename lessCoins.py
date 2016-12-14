@@ -9,4 +9,6 @@ def lessCoins(n_cents):
         requiredAmount = n_cents // value
         if requiredAmount > 0:
             print("You will require {} {} pieces".format(requiredAmount, currency))
-            n_cents = n_cents - (requiredAmount * value)    //Remove cents
+            n_cents = n_cents - (requiredAmount * value)
+            
+lessCoins(12345)
