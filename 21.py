@@ -3,14 +3,13 @@
 
 def twentyone(seq):
     answer = []
-    current_path = []
     
     for index, seq_number in enumerate(seq):
-        for subSetIndex in range(index + 1,len(seq)):
+        for subset_index in range(index + 1, len(seq)):
             current_path = [seq_number]
-            for added_num in seq[subSetIndex:]:
+            for added_num in seq[subset_index:]:
                 current_path.append(added_num)
-                if(sum(current_path)) == 21:
+                if (sum(current_path)) == 21:
                     answer.append(current_path)
                     break
                 elif (sum(current_path)) > 21:
