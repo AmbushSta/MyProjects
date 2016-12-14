@@ -16,9 +16,9 @@ def twentyone(seq):
                     break
                 
     if len(answer) > 0:
-        for anAnswer in answer:
+        for an_answer in answer:
             print("The values ", end = "")
-            for a_combination in anAnswer:
+            for a_combination in an_answer:
                 print("{} ".format(a_combination), end = "")
             print("add up to 21")
 
