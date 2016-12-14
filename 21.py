@@ -9,10 +9,10 @@ def twentyone(seq):
             current_path = [seq_number]
             for added_num in seq[subset_index:]:
                 current_path.append(added_num)
-                if (sum(current_path)) == 21:
+                if sum(current_path) == 21:
                     answer.append(current_path)
                     break
-                elif (sum(current_path)) > 21:
+                elif sum(current_path) > 21:
                     break
                 
     if len(answer) > 0:
