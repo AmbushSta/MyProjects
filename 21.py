@@ -26,3 +26,8 @@ def twentyone(seq):
 #Example
 seq = [5, 6, 7,10,11,7,3]
 twentyone(seq)
+"""
+Output
+The values 10 11 add up to 21
+The values 11 7 3 add up to 21
+"""
