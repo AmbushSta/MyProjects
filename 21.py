@@ -18,8 +18,8 @@ def twentyone(seq):
     if len(answer) > 0:
         for anAnswer in answer:
             print("The values ", end = "")
-            for value in anAnswer:
-                print("{} ".format(value), end = "")
+            for a_combination in anAnswer:
+                print("{} ".format(a_combination), end = "")
             print("add up to 21")
 
 #Example
