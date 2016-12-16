@@ -1,6 +1,6 @@
 """Given a list it will return the maximum permutations of the given list"""
 
-def perms(s,index = 0, sLength = None,answer = set()):
+def perms(s, index = 0, sLength = None, answer = set()):
     if sLength == None:
         sLength = len(s)
     if index == sLength:
