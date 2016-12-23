@@ -9,12 +9,13 @@ def all_primes(upper_limit):
     if upper_limit < 3:
         return
     current_number = 3
-    for a_prime in get_primes(current_number):
+    for a_prime in get_primes():
         if a_prime > upper_limit:
             return
         print(a_prime)
         
-def get_primes(current_number):
+def get_primes():
+    current_number = 3
     while True:
         if is_prime(current_number):
             yield current_number
