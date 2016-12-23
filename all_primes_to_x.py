@@ -8,7 +8,6 @@ import math
 def all_primes(upper_limit):
     if upper_limit < 3:
         return
-    current_number = 3
     for a_prime in get_primes():
         if a_prime > upper_limit:
             return
