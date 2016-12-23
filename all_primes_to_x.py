@@ -1,6 +1,3 @@
-'''
-Prime generator, made to practice and learn generators and the yield keyword
-'''
 #Given an upper limit, prints all primes up to and including the given limit
 
 import math
