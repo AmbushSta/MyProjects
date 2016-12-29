@@ -1,4 +1,7 @@
-#Given an upper limit, prints all primes up to and including the given limit
+'''
+Given an upper limit, prints all primes up to and including the given limit
+Author: Michael Cowie
+''''
 import math
 
 def all_primes(upper_limit):
