@@ -30,7 +30,7 @@ class Linkedlist:
                 if previous_node != None:
                     previous_node.set_next(current_node.get_next())
                 else:
-                    self.root = None
+                    self.root = current_node.get_next()
                 self.size -= 1
                 return True
             else:
