@@ -1,8 +1,3 @@
-"""
-Given a sequence of numbers fromm the user input, prints all permutations of the sequence
-Author: Michael Cowie
-"""
-
 import sys
 
 """
