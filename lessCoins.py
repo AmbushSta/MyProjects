@@ -1,6 +1,9 @@
-"""Takes in an integer representing the amount of cents you have, and prints
+"""
+Takes in an integer representing the amount of cents you have, and prints
 the amount of notes you can acquire, with the fifty cents and ten cents
-being the remaining"""
+being the remaining
+Author: Michael Cowie
+"""
 
 def lessCoins(n_cents):
     nzCurrency = [(500, 'Five dollars'),(200,'Two dollars'),(100, 'One dollar'),
