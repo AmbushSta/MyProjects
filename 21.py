@@ -1,6 +1,7 @@
 """
-Given a list returns all possible combinations of numbers that add to
-21, prints into shell
+Takes a sequence of numbers as input from the user and prints
+all possible sequence of numbers that add to 21.
+Author: Michael Cowie
 """
 
 def twentyone(seq):
