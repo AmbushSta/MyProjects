@@ -20,9 +20,9 @@ answer = perms(list_format)
 if len(answer) == 0:
     print("You have given a list of length zero")
 else:
-    print("The following sequence are all permutations from the input sequence {}".format("".join(str(x) for x in list_format)))
+    print("The following sequence are all permutations from the input sequence {}".format(" ".join(str(x) for x in list_format)))
     for solution in answer:
-        print("{}".format("".join(str(x) for x in solution)))
+        print("{}".format(" ".join(str(x) for x in solution)))
 """"
 Example:
 Input "5 6 7" should output:
