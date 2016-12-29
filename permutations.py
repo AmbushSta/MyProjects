@@ -1,5 +1,5 @@
 """
-Given a list it will return the maximum permutations of the given list
+Given a sequence of numbers fromm the user input, prints all permutations of the sequence
 Author: Michael Cowie
 """
 
