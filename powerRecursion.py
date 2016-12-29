@@ -1,4 +1,7 @@
-'''Computes x^n in O(log n) time'''
+'''
+Computes x^n in O(log n) time
+Author: Michael Cowie
+'''
 
 def power(x, n):
     if n == 1:
