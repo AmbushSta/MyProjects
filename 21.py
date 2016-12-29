@@ -1,5 +1,7 @@
-"""Given a list returns all possible combinations of numbers that add to
-21, prints into shell"""
+"""
+Given a list returns all possible combinations of numbers that add to
+21, prints into shell
+"""
 
 def twentyone(seq):
     answer = []
@@ -25,11 +27,12 @@ def twentyone(seq):
 #Example
 seq = [5, 6, 7,10,11,7,3]
 twentyone(seq)
+
+
 """
-Output
+Output from example:
 The values 10 11 add up to 21
 The values 11 7 3 add up to 21
+
+Fail case [1,9,11,5,6], corrected using recursion method
 """
-
-
-#Fail case [1,9,11,5,6], corrected using recursion method
