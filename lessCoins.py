@@ -1,7 +1,6 @@
 """
 Takes in an integer representing the amount of cents you have, and prints
-the amount of notes you can acquire, with the fifty cents and ten cents
-being the remaining
+the amount of notes you can acquire including fifty and ten cents.
 Author: Michael Cowie
 """
 
