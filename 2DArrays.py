@@ -3,7 +3,6 @@
 column = int(input())
 row = int(input())
 matrix = [[0 for y in range(column)] for x in range(row)]
-print(matrix)
 
 '''
 Notes:
