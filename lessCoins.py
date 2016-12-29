@@ -15,3 +15,10 @@ def lessCoins(n_cents):
             n_cents = n_cents - (requiredAmount * value)
             
 lessCoins(12345)
+"""
+Outputs:
+You will require 24 Five dollars pieces
+You will require 1 Two dollars pieces
+You will require 1 One dollar pieces
+You will require 4 Ten cents pieces
+"""
