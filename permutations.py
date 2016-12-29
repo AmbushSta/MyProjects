@@ -1,4 +1,7 @@
-"""Given a list it will return the maximum permutations of the given list"""
+"""
+Given a list it will return the maximum permutations of the given list
+Author: Michael Cowie
+"""
 
 def perms(s_List = [], index = 0, s_Length = None, answer = set()):
     if s_Length == None:
