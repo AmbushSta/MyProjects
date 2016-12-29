@@ -26,12 +26,13 @@ class LinkedList:
         previous_node = None
         current_node = self.root
         while current_node != None:
-            if current_node.get_data() == data and previous_node != None:
-                previous_node.get_next() = current_node.get_next()
+            current_node_data = current_node.get_data()
+            if current_node_data == data and previous_node != None:
+                previous_node.set_next(current_node.get_next())
                 size -= 1
                 return True
             #Case when deleting the root
-            elif current_node.get_data() == data and previous_node == None:
+            elif current_node_data == data and previous_node == None:
                 self.root = current_node.get_next()
                 size -= 1
                 return True
