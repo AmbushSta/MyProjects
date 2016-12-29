@@ -32,9 +32,11 @@ class LinkedList:
                 return True
             #Case when deleting the root
             elif current_node.get_data() == data and previous_node == None:
-                self.root = current_node
+                self.root = current_node.get_next()
                 size -= 1
                 return True
+            else:
+                return False
                 
 #TestCases
 first_Node = Node(5)
