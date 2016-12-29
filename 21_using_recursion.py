@@ -17,6 +17,8 @@ user_input = input()
 list_format = [int(x) for x in user_input.split()]
 answer = twentyone(list_format)
 
+if len(answer) == 0:
+    print("No combination of numbers add to 21")
 for solution in answer:
     print("The values ", end = "")
     for number in solution:
@@ -26,7 +28,7 @@ for solution in answer:
     
 '''
 Reccomended test:
-"1 9 11 5 6" as input should output
+1,9,11,5,6 Should output
 The values 1 9 11 add up to 21
 The values 1 9 5 6 add up to 21
 '''
