@@ -12,4 +12,4 @@ def perms(s, index = 0, sLength = None, answer = set()):
         s_List[index] , s_List[i] = s_List[i], s_List[index]
     return answer
 
-print(sorted(perms([5,6,7,10,11])))
+print(sorted(perms([5,6,7])))
