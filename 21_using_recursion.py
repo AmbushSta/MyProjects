@@ -1,7 +1,8 @@
-'''
-Finds all combinations of numbers from the given list input that
-add to 21
-'''
+"""
+Takes a sequence of numbers as input from the user and prints
+all possible sequence of numbers that add to 21.
+Author: Michael Cowie
+"""
 
 def twentyone(nums, stack = [], answer = set()):
     for index, num in enumerate(nums):
