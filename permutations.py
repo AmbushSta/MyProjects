@@ -18,7 +18,7 @@ def perms(s_List = [], index = 0, s_Length = None, answer = set()):
 
 user_input = input()
 if len(user_input.strip()) == 0:
-    print("You have given a list of length zero\n")
+    print("Please provide a sequence of space seperated numbers\n")
     sys.exit()
 list_format = [int(x) for x in user_input.split()]
 
