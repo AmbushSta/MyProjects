@@ -34,6 +34,7 @@ class Linkedlist:
                 self.size -= 1
                 return True
             else:
+                previous_node = current_node
                 current_node = current_node.get_next()
         return False
     def display_data(self):
@@ -51,3 +52,12 @@ myList.insert_node(20)
 myList.insert_node(15)
 myList.insert_node(10)
 myList.insert_node(5)
+
+
+'''
+myList.display_data()
+myList.remove_node(15)
+myList.display_data()
+
+Correctly removes node with data 15
+'''
