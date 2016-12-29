@@ -1,14 +1,13 @@
 """Given a list it will return the maximum permutations of the given list"""
 
-def perms(s, index = 0, sLength = None, answer = set()):
-    if sLength == None:
-        sLength = len(s)
-    if index == sLength:
-        answer.add(tuple(s))    
-    s_List = list(s)
-    for i in range(index, sLength):
+def perms(s_List = [], index = 0, s_Length = None, answer = set()):
+    if s_Length == None:
+        s_Length = len(s_List)
+    if index == s_Length:
+        answer.add(tuple(s_List))    
+    for i in range(index, s_Length):
         s_List[index], s_List[i] = s_List[i], s_List[index]
-        perms(s_List, index + 1, sLength,answer) 
+        perms(s_List, index + 1, s_Length,answer) 
         s_List[index] , s_List[i] = s_List[i], s_List[index]
     return answer
 
