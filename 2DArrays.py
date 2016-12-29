@@ -2,7 +2,7 @@
 
 column = int(input())
 row = int(input())
-matrix = [[0 for x in range(column)] for y in range(row)]
+matrix = [[0 for y in range(column)] for x in range(row)]
 print(matrix)
 
 '''
