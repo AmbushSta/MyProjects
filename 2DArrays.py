@@ -1,4 +1,7 @@
-'''Creates a 2DArray from input variables'''
+'''
+Creates a 2DArray from input variables
+Author: Michael Cowie
+'''
 
 column = int(input())
 row = int(input())
