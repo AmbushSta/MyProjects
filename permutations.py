@@ -3,6 +3,13 @@ Given a sequence of numbers fromm the user input, prints all permutations of the
 Author: Michael Cowie
 """
 
+import sys
+
+"""
+Given a sequence of numbers fromm the user input, prints all permutations of the sequence
+Author: Michael Cowie
+"""
+
 def perms(s_List = [], index = 0, s_Length = None, answer = set()):
     if s_Length == None:
         s_Length = len(s_List)
@@ -15,10 +22,14 @@ def perms(s_List = [], index = 0, s_Length = None, answer = set()):
     return answer
 
 user_input = input()
+if len(user_input.strip()) == 0:
+    print("You have given a list of length zero\n")
+    sys.exit()
 list_format = [int(x) for x in user_input.split()]
+
 answer = perms(list_format)
 if len(answer) == 0:
-    print("You have given a list of length zero")
+    print("No possible permutations")
 else:
     print("The following sequence are all permutations from the input \"{}\"".format(" ".join(str(x) for x in list_format)))
     for solution in answer:
