@@ -14,4 +14,12 @@ def perms(s_List = [], index = 0, s_Length = None, answer = set()):
         s_List[index] , s_List[i] = s_List[i], s_List[index]
     return answer
 
-print(sorted(perms([5,6,7])))
+user_input = input()
+list_format = [int(x) for x in user_input.split()]
+answer = perms(list_format)
+if len(answer) == 0:
+    print("You have given a list of length zero")
+else:
+    print("The following sequence are all permutations from the input sequence {}".format("".join(str(x) for x in list_format)))
+    for solution in answer:
+        print("{}".format("".join(str(x) for x in solution)))
