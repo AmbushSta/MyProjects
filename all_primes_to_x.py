@@ -1,5 +1,4 @@
 #Given an upper limit, prints all primes up to and including the given limit
-
 import math
 
 def all_primes(upper_limit):
