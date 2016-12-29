@@ -1,3 +1,8 @@
+'''
+Finds all combinations of numbers from the given list input that
+add to 21
+'''
+
 def twentyone(nums, stack = [], answer = set()):
     for index, num in enumerate(nums):
         new_stack = stack + [num]
@@ -8,5 +13,20 @@ def twentyone(nums, stack = [], answer = set()):
             twentyone(nums[index + 1:], new_stack, answer)
     return answer
 
-answer = twentyone([1,9,11,5,6])
-print(answer)
+user_input = input()
+list_format = [int(x) for x in user_input.split()]
+answer = twentyone(list_format)
+
+for solution in answer:
+    print("The values ", end = "")
+    for number in solution:
+            print("{} ".format(number), end = "")
+    print("add up to 21")
+    
+    
+'''
+Reccomended test:
+1,9,11,5,6 Should output
+The values 1 9 11 add up to 21
+The values 1 9 5 6 add up to 21
+'''
