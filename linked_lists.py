@@ -1,3 +1,8 @@
+'''
+Two classes used to create linked lists
+Author: Michael Cowie
+'''
+
 class Node:
     def __init__(self, data = None, next_node = None):
         self.data = data
