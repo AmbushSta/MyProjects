@@ -26,7 +26,7 @@ for solution in answer:
     
 '''
 Reccomended test:
-1,9,11,5,6 Should output
+"1 9 11 5 6" as input should output
 The values 1 9 11 add up to 21
 The values 1 9 5 6 add up to 21
 '''
