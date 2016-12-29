@@ -32,4 +32,4 @@ The values 11 7 3 add up to 21
 """
 
 
-#Fail case [1,9,11,5,6]
+#Fail case [1,9,11,5,6], corrected using recursion method
