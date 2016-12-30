@@ -29,7 +29,7 @@ for solution in answer:
     
 '''
 Reccomended test:
-"1 9 11 5 6" Should output
+"1 9 11 5 6" has the correct output and fixes my previous attempt not using backtracking
 The values 1 9 11 add up to 21
 The values 1 9 5 6 add up to 21
 '''
