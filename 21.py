@@ -32,8 +32,8 @@ for solution in answer:
 
 
 """
-Using Example numbers "5, 6, 7,10,11,7,3"
-Output from example:
+Using Example numbers "5, 6, 7, 10, 11, 7, 3"
+Output from example: 
 The values 10 11 add up to 21
 The values 11 7 3 add up to 21
 
