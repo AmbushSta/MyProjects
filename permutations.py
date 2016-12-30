@@ -26,13 +26,13 @@ answer = perms(list_format)
 if len(answer) == 0:
     print("No possible permutations")
 else:
-    print("The following sequence are all permutations from the input \"{}\"".format(" ".join(str(x) for x in list_format)))
+    print("The following combinations are all permutations from the input \"{}\"".format(" ".join(str(x) for x in list_format)))
     for solution in answer:
         print("{}".format(" ".join(str(x) for x in solution)))
 """"
 Example:
 Input "5 6 7" should output:
-The following sequence are all permutations from the input "5 6 7"
+The following combinations are all permutations from the input "5 6 7"
 5 7 6
 5 6 7
 6 5 7
