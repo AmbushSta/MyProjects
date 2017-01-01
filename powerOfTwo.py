@@ -13,7 +13,7 @@ x = int(input())
 
 def highest_power(x):
     current_highest = 0
-    while 2 ** current_highest < x:
+    while 2 ** current_highest <= x:
         current_highest += 1
     return current_highest - 1
 
