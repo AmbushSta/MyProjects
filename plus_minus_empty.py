@@ -4,8 +4,6 @@ where the second half is.
 
 So far, my code takes a user input of one number and prints all combinations
 of a "+","-" or empty string between each consecutive number using backtracking.
-
-Question was primarily done for practice rather than a useful purpose.
 '''
 
 def plus_minus_empty(string, new_string = '', index = 0, answer = []):
