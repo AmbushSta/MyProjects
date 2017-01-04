@@ -16,8 +16,8 @@ highest_power = math.floor(math.log(x,2))
 recursion_list = []
 
 for power in range(highest_power + 1):
-    recursion_list.append(2 ** power)
-    recursion_list.append(2 ** power)
+    for _ in range(2):
+        recursion_list.append(2 ** power)
 
 def euler169(user_input, current_stack = [], answer = set()):
     for index, num in enumerate(user_input):
@@ -28,6 +28,5 @@ def euler169(user_input, current_stack = [], answer = set()):
         elif sum(new_stack) < x:
             euler169(user_input[index +1:], new_stack, answer)
     return answer
-
 answer = euler169(recursion_list)
 print(len(answer))
