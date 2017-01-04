@@ -12,10 +12,10 @@ what is (n) for a given n
 import math
 
 x = int(input())
-current_highest = math.floor(math.log(x,2))
+highest_power = math.floor(math.log(x,2))
 recursion_list = []
 
-for power in range(current_highest + 1):
+for power in range(highest_power + 1):
     recursion_list.append(2 ** power)
     recursion_list.append(2 ** power)
 
