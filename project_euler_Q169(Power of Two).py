@@ -19,14 +19,15 @@ for power in range(highest_power + 1):
     for _ in range(2):
         recursion_list.append(2 ** power)
 
-def euler169(user_input, current_stack = [], answer = set()):
-    for index, num in enumerate(user_input):
+def euler169(nums, current_stack = [], answer = set()):
+    for index, num in enumerate(nums):
         new_stack = current_stack + [num]
-        if sum(new_stack) == x:
+        total = sum(new_stack)
+        if total == x:
             answer.add(tuple(new_stack))
-            return
-        elif sum(new_stack) < x:
-            euler169(user_input[index +1:], new_stack, answer)
+            #return
+        elif total < x:
+            euler169(nums[index +1:], new_stack, answer)
     return answer
 answer = euler169(recursion_list)
 print(len(answer))
