@@ -1,11 +1,11 @@
 '''
 Given an upper limit, prints all primes up to and including the given limit
 Author: Michael Cowie
-''''
+'''
 import math
 
 def all_primes(upper_limit):
-    if upper_limit < 3:
+    if upper_limit < 2:
         return
     for a_prime in get_primes():
         if a_prime > upper_limit:
@@ -13,7 +13,8 @@ def all_primes(upper_limit):
         print(a_prime)
         
 def get_primes():
-    current_number = 3
+    current_number = 2
+    print(current_number)
     while True:
         if is_prime(current_number):
             yield current_number
