@@ -52,3 +52,10 @@ def test2():
 print(type(test1())) #<class 'generator'>
 temp = test2()
 print(type(temp))   #<class 'list'>
+
+
+
+#Using a generator instead of list comprehension
+generator = (x for x in range(3))
+for x in generator:
+    print(x) #0 1 2
