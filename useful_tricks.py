@@ -59,3 +59,13 @@ print(type(temp))   #<class 'list'>
 generator = (x for x in range(3))
 for x in generator:
     print(x) #0 1 2
+
+    
+#Understanding * and **
+def x(**argv):
+    print(argv) #{'variable': 'x'}
+x(variable = "x")
+
+def x(*argv):
+    print(argv) #('x', 'y', 'z')
+x("x","y","z")
