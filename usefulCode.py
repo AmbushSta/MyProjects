@@ -19,3 +19,20 @@ depth = 5
 nested_dict = {x : dict() for x in range(depth)}
 nested_dict[0][1] = 5 #Example
 print(nested_dict[0][1]) #5
+
+#How to represent a map, in the form of a x,y plane.
+map_str = """\
++------------+
+|    S       |
+|            |
+|            |
+| G          |
+|            |
++------------+
+"""
+
+map_str = map_str.split("\n") #alternatively you can use the method splitlines()
+#Now index, row by column.
+row = 1
+column = 5
+print(map_str[row][column]) #S
