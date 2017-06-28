@@ -18,10 +18,10 @@ x = [n for n in range(-2**62, 2**62)]
 
 
 #Doubley nested dictionaries, made easy.
-depth = 5
-nested_dict = {x : dict() for x in range(depth)}
-nested_dict[0][1] = 5 #Example
-print(nested_dict[0][1]) #5
+requirements = ["x", "y", "z"]
+nested_dict = {x : dict() for x in requirements}
+nested_dict["x"][1] = 5 #Example
+print(nested_dict["x"][1]) #5
 
 
 #How to represent a map, in the form of a x,y plane.
