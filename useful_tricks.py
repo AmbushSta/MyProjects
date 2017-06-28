@@ -22,11 +22,11 @@ print(nested_dict[0][1]) #5
 
 #How to represent a map, in the form of a x,y plane.
 map_str = """\
-+------------+
-|    S       |
-|            |
-|            |
-| G          |
++------------+                       #To traverse the graph, use the following list.
+|    S       |                       #directions = [('N' , -1, 0), ('NE', -1, 1),
+|            |                       #              ('E' ,  0, 1), ('SE',  1, 1),
+|            |                       #              ('S' ,  1, 0), ('SW',  1, -1),
+| G          |                       #              ('W' ,  0, -1), ('NW', -1, -1)]
 |            |
 +------------+
 """
