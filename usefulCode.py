@@ -12,7 +12,7 @@ tuple_list = [(10,9),(8,7),(6,5),(4,3),(2,1)]
 print(sorted(tuple_list, key = lambda x : x[1]))  #[(2, 1), (4, 3), (6, 5), (8, 7), (10, 9)]
 
 #Fill up someones ram ;)
-x = [x for x in range(-2**62, 2**62)]
+x = [n for n in range(-2**62, 2**62)]
 
 #Doubley nested dictionaries, made easy.
 depth = 5
