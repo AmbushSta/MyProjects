@@ -40,3 +40,15 @@ map_str = map_str.split("\n") #alternatively you can use the method splitlines()
 row = 1
 column = 5
 print(map_str[row][column]) #S
+
+
+
+#Knowing when a generator is being returned.
+def test1():
+    return (x for x in range(10))
+  
+def test2():
+    return [x for x in range(10)]
+print(type(test1())) #<class 'generator'>
+temp = test2()
+print(type(temp))   #<class 'list'>
