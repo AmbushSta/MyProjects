@@ -2,7 +2,11 @@
 Contains small, but very useful code.
 """
 
-#Finds the most frequent occurence of words in a given string seperated by spaces.
+#Find the most frequent letter in a string using the max() function
 test_string = "x x y  "
 most_common = max(test_string, key = lambda x : test_string.split(" ").count(x))
-print(most_common)
+print(most_common)  #1
+
+#Tuple sorting by 2nd index
+tuple_list = [(10,9),(8,7),(6,5),(4,3),(2,1)]
+print(sorted(tuple_list, key = lambda x : x[1]))  #[(2, 1), (4, 3), (6, 5), (8, 7), (10, 9)]
