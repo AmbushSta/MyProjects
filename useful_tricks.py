@@ -1,5 +1,5 @@
 """
-Contains useful tricks that are very useful when programming in python.
+Very useful tricks that can be performed in python
 """
 
 #Find the most frequent occruence of words in a single string seperated by a space using the max() function
