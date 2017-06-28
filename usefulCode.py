@@ -1,5 +1,5 @@
 """
-Contains small, but very useful code.
+Contains useful tricks that are very useful when programming in python.
 """
 
 #Find the most frequent occruence of words in a single string seperated by a space.
