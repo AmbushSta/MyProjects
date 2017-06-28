@@ -2,7 +2,7 @@
 Contains useful tricks that are very useful when programming in python.
 """
 
-#Find the most frequent occruence of words in a single string seperated by a space.
+#Find the most frequent occruence of words in a single string seperated by a space using the max() function
 test_string = "x x y z Michael-Cowie"
 most_common = max(test_string, key = lambda x : test_string.split(" ").count(x))
 print(most_common)  #1
