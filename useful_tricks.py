@@ -43,6 +43,11 @@ print(map_str[row][column]) #S
 
 
 
+#getting from standard input like a cool kid
+x, y = [i for i in input().split()]
+
+
+
 #Knowing when a generator is being returned.
 def test1():
     return (x for x in range(10))
