@@ -12,11 +12,6 @@ print(most_common)  #x
 tuple_list = [(10,9),(8,7),(6,5),(4,3),(2,1)]
 print(sorted(tuple_list, key=lambda x: x[1]))  #[(2, 1), (4, 3), (6, 5), (8, 7), (10, 9)]
 
-
-#Fill up someones ram ;)
-x = [n for n in range(-2**62, 2**62)]
-
-
 #Doubley nested dictionaries, made easy.
 requirements = ["x", "y", "z"]
 nested_dict = {x : dict() for x in requirements}
@@ -74,3 +69,8 @@ x(variable = "x")
 def x(*argv):
     print(argv) #('x', 'y', 'z')
 x("x","y","z")
+
+
+
+#Fill up someones ram ;)
+x = [n for n in range(-2**62, 2**62)]
