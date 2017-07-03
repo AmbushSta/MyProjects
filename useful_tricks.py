@@ -59,6 +59,15 @@ def x(*argv):
 x("x","y","z")
 
 
+#Using [:] acts as a deepcopy when doing it on two lists with immutable objects, but is actually still shallow copying
+a = [1,2,3]                               #a = [1,2,3]
+b = [4,5,6]                               #b = a[:]
+x = [a,b]                                 #a.pop()
+y = x[:]                                  #print(a) [1, 2]
+a.pop()                                   #print(b) [1,2,3]
+print(y) #[[1, 2], [4, 5, 6]]             #Acts as a deep copy, but is actually shallowing copying over immutable objects
+#Therefore shallow copying
+
 
 #Fill up someones ram ;)
 x = [n for n in range(-2**62, 2**62)]
