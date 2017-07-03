@@ -43,18 +43,6 @@ x, y = [i for i in input().split()]
 
 
 
-#Knowing when a generator is being returned.
-def test1():
-    return (x for x in range(10))
-  
-def test2():
-    return [x for x in range(10)]
-print(type(test1())) #<class 'generator'>
-temp = test2()
-print(type(temp))   #<class 'list'>
-
-
-
 #Using a generator instead of list comprehension
 generator = (x for x in range(3))
 for x in generator:
