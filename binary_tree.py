@@ -34,7 +34,7 @@ class Tree():
             else:
                 self.add_helper(self, value, node.right)
                 
-    def print_Tree(self):
+    def print_tree(self):
         if self.root != None:
             bfs = self.bfs_traversal(self.root)
             print(bfs)
