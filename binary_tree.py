@@ -6,7 +6,6 @@ class Node():
         
 #My binary tree implementation does not allow duplicates        
 class Tree():
-    
     def __init__(self):
         self.root = None
         
