@@ -18,17 +18,17 @@ class Tree():
         else:
             self.add_helper(value, self.root)
             
-    #Recursive method for iterating over the nodes       
+    #Recursive method reaching all nodes     
     def add_helper(self, value, node):
         #Check left node
         if value < node.value:
-            #Check is a leaf node
+            #Check if it is a leaf node
             if node.left == None:
                 node.left = Node(value)
             else:
                 self.add_helper(value, node.left)
+        #Check right node        
         elif value > node.value:
-            #Check is a leaf node
             if node.right == None:
                 node.right = Node(value)
             else:
