@@ -8,12 +8,9 @@ class Node():
 class Tree():
     def __init__(self):
         self.root = None
-        
-    def get_root(self):
-        return self.root
     
     def add(self, value):
-        if self.root == None:
+        if self.root is None:
             self.root = Node(value)
         else:
             self.add_helper(value, self.root)
@@ -23,13 +20,13 @@ class Tree():
         #Check left node
         if value < node.value:
             #Check if it is a leaf node
-            if node.left == None:
+            if node.left is None:
                 node.left = Node(value)
             else:
                 self.add_helper(value, node.left)
         #Check right node        
         elif value > node.value:
-            if node.right == None:
+            if node.right is None:
                 node.right = Node(value)
             else:
                 self.add_helper(self, value, node.right)
