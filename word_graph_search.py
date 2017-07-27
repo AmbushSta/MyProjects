@@ -45,3 +45,10 @@ my_map = """
 
 occurence = count_Win_Occurence(my_map)
 print(occurence) #4
+
+"""
+Possible solution : SE SE
+Possible solution : SE SW
+Possible solution : S S
+Possible solution : S W
+"""
