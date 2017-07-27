@@ -29,7 +29,7 @@ def count_Occurences_From(row, col, user_map, goal_string = "IN", direction_list
         new_row = row + row_add
         new_col = col + col_add        
         if user_map[new_row][new_col] == goal_string[0]:
-            direction_stack = [direction] + direction_list
+            direction_stack = direction_list + [direction]
             occurences += count_Occurences_From(new_row, new_col, user_map, goal_string[1:], direction_stack)
     return occurences
 
