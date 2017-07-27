@@ -22,14 +22,13 @@ def countWinOccurence(user_map):
 
 def countOccurencesFrom(row, col, user_map, goal_string = "IN"):
     if goal_string == "":
-        return True
+        return 1
     occurences = 0
     for _, row_add, col_add in directions:
         new_row = row + row_add
         new_col = col + col_add        
         if user_map[new_row][new_col] == goal_string[0]:
-            if countOccurencesFrom(new_row, new_col, user_map, goal_string[1:]):
-                occurences += 1
+            occurences += countOccurencesFrom(new_row, new_col, user_map, goal_string[1:])
     return occurences
 
 my_map = """
