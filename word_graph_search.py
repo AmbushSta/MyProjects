@@ -11,16 +11,16 @@ directions = [('N' , -1, 0), ('NE', -1, 1),
               ('W' ,  0, -1), ('NW', -1, -1)]
 
 
-def countWinOccurence(user_map):
+def count_Win_Occurence(user_map):
     occurences = 0
     twoDArray = user_map.split("\n")
     for row in range(len(twoDArray)):
         for col in range(len(twoDArray[row])):
             if twoDArray[row][col] == "W":
-                occurences += countOccurencesFrom(row, col, twoDArray)
+                occurences += count_Occurences_From(row, col, twoDArray)
     return occurences
 
-def countOccurencesFrom(row, col, user_map, goal_string = "IN"):
+def count_Occurences_From(row, col, user_map, goal_string = "IN"):
     if goal_string == "":
         return 1
     occurences = 0
@@ -28,7 +28,7 @@ def countOccurencesFrom(row, col, user_map, goal_string = "IN"):
         new_row = row + row_add
         new_col = col + col_add        
         if user_map[new_row][new_col] == goal_string[0]:
-            occurences += countOccurencesFrom(new_row, new_col, user_map, goal_string[1:])
+            occurences += count_Occurences_From(new_row, new_col, user_map, goal_string[1:])
     return occurences
 
 my_map = """
@@ -41,5 +41,5 @@ my_map = """
 """
 
 
-occurence = countWinOccurence(my_map)
-print(occurence) #3--Incomplete
+occurence = count_Win_Occurence(my_map)
+print(occurence) #4
