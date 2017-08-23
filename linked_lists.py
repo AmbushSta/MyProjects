@@ -21,12 +21,15 @@ class Linkedlist:
     def __init__(self, root = None):
         self.root = None
         self.size = 0
+        
     def get_size(self):
         return self.size
+    
     def insert_node(self, data):
         new_node = Node(data, self.root)
         self.root = new_node
         self.size += 1
+        
     def remove_node(self, data):
         previous_node = None
         current_node = self.root
@@ -42,6 +45,7 @@ class Linkedlist:
                 previous_node = current_node
                 current_node = current_node.get_next()
         return False
+    
     def find_data(self, data):
         current_index = 0
         current_node = self.root
@@ -51,6 +55,7 @@ class Linkedlist:
             else:
                 current_node = current_node.get_next()
                 current_index += 1
+                
     def insert_at_index(self, index , data):
         if index == 0:
             self.insert_node(data)
@@ -66,6 +71,7 @@ class Linkedlist:
                 new_node = Node(data, current_node)
                 previous_node.set_next(new_node)
                 return True
+            
     def display_data(self):
         current_node = self.root
         node_number = 0
