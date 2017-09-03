@@ -7,24 +7,23 @@ class Node:
     def __init__(self, data = None, next_node = None):
         self.data = data
         self.next_node = next_node
+        
     def get_next(self):
         return self.next_node
+    
     def set_next(self, node_object):
         self.next_node = node_object
-    def get_data(self):
-        return self.data
+        
     def set_data(self, data):
         self.data = data
         
         
 class Linkedlist:
+    
     def __init__(self, root = None):
         self.root = None
         self.size = 0
         
-    def get_size(self):
-        return self.size
-    
     def insert_node(self, data):
         new_node = Node(data, self.root)
         self.root = new_node
