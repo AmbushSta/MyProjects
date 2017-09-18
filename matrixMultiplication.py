@@ -6,13 +6,13 @@
     Author: Michael Cowie
 """
 
-def matrixMultiplier(A, B):
+def multiply_two_matricies(A, B):
     
     try:
         if len(A[0]) != len(B):
-            return 0
-    except: #Exception used when index out of range error
-        return 0
+            raise Exception("Mate you can't multiply these")
+    except IndexError: #Exception used when index out of range error
+        raise Exception("Mate you can't multiply these")
     
     answer = [
         [sum(x * y for x, y in zip(col, row)) for col in zip(*B)] for row in A
@@ -22,11 +22,10 @@ def matrixMultiplier(A, B):
     
     
 
-matrix1 = [[1,2],
-           [3,4]]
+matrix1 = []
 
 matrix2 = [[1,2],
            [3,4]]
 
-result = matrixMultiplier(matrix1, matrix2)
+result = multiply_two_matricies(matrix1, matrix2)
 print(result) #[[7, 10], [15, 22]]
