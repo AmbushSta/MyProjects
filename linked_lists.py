@@ -60,7 +60,6 @@ class Linkedlist:
             current_node = current_node.next_node
         new_node = Node(data, current_node)
         previous_node.next_node = new_node
-        
         return True
             
     def display_data(self):
