@@ -11,7 +11,7 @@ def multiply_two_matricies(A, B):
     try:
         if len(A[0]) != len(B):
             raise Exception("Mate you can't multiply these")
-    except IndexError: #Exception used when index out of range error
+    except IndexError:
         raise Exception("Mate you can't multiply these")
     
     answer = [
