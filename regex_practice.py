@@ -34,3 +34,12 @@ print(re.findall("\d{2}", pattern2))        #['12', '14', '44', '56', '77', '88'
 #using split
 print(re.split(".*the", pattern1))          #['', ' lazy dog']
 print(re.split("\s+", space_split)) #['a', 'b', 'c', 'd']
+
+
+# greedy vs non-greedy
+# greedy = matches the longest string possible
+# non-greedy = matches the shortest string possible
+
+x = "<em>Hello World</em>"
+print(re.match("<.+?>", x).group(0)) # non-greedy. Matches "<em>"
+print(re.match("<.+>", x).group(0)) #greedy. Matches "<em>Hello World</em>"
