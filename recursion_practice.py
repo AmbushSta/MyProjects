@@ -1,4 +1,27 @@
 '''
+Displays all the combinations of the given input.
+e.g 
+    Input: 123
+    Output: 123
+            12 3
+            1 23
+            1 2 3
+'''
+def digitCombinations(us):
+    if len(us) < 2:
+        print(us)
+    rec(us, us[0])
+    
+def rec(us, cs, index=1):
+    if len(us) == index:
+        print(cs)
+    else:
+        rec(us, cs + us[index], index + 1)
+        rec(us, cs + " " + us[index], index + 1)
+    
+digitCombinations("123")
+
+'''
 Computes the binary combinations of numbers up of length n
 '''
 def bc(ui, current_string = 0, stack=[]):
