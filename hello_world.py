@@ -5,13 +5,13 @@ import time
 import random
 
 current = ""
-index = 0
+i = 0
 hw = 'Hello World'
-while index < len(hw):
-    i = random.randint(ord(' '), ord('z') + 1)
-    new_string = current + chr(i)
+while i < len(hw):
+    letter = random.randint(ord(' '), ord('z') + 1)
+    new_string = current + chr(letter)
     print(new_string, end='\r')
     time.sleep(0.01)
-    if chr(i) == hw[index]:
-        current += chr(i)
-        index += 1
+    if chr(letter) == hw[i]:
+        current += chr(letter)
+        i += 1
