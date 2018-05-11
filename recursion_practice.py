@@ -1,4 +1,25 @@
 '''
+Given a chocolate bar of size r * c, where r = the height and c = the width, Calculates the minimum amount of snaps
+it will take for the chocolate be to of all one size.
+'''
+def rec(r, c):
+    if r == 1:
+        return c - 1
+    elif c == 1:
+        return r - 1
+   
+    if r % 2 == 0 and c % 2 == 0:
+        return 1 + rec(r, c//2) + rec(r, c//2)
+    elif r  % 2 == 0 and c % 2 != 0:
+        return 1 + rec(r//2, c) + rec(r//2, c)
+    elif r % 2 != 0 and c % 2 == 0:
+        return 1 + rec(r, c//2) + rec(r, c//2)
+    else:
+        return 1 + rec(r, c//2) + rec(r, c - c//2)
+           
+print(rec(20,30))
+
+'''
 Displays all the combinations of the given input.
 e.g 
     Input: 123
