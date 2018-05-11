@@ -9,7 +9,7 @@ directions = [('N' , -1, 0), ('NE', -1, 1),
               ('W' ,  0, -1), ('NW', -1, -1)]
 
 
-def count_Win_Occurence(user_map, keyword):
+def count_Keyword_Occurence(user_map, keyword):
     occurences = 0
     twoD_Array = user_map.split("\n")
     row_length = len(twoD_Array)
@@ -42,7 +42,7 @@ my_map = """
 """
 
 
-occurence = count_Win_Occurence(my_map, "PYTHON")
+occurence = count_Keyword_Occurence(my_map, "PYTHON")
 print(occurence) #
 
 
