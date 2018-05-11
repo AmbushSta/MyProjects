@@ -1,8 +1,65 @@
 """
+Given a 2D graph, counters the occurence of the keyword given.
+All directions.
+"""
+
+directions = [('N' , -1, 0), ('NE', -1, 1),
+              ('E' ,  0, 1), ('SE',  1, 1),
+              ('S' ,  1, 0), ('SW',  1, -1),
+              ('W' ,  0, -1), ('NW', -1, -1)]
+
+
+def count_Win_Occurence(user_map, keyword):
+    occurences = 0
+    twoD_Array = user_map.split("\n")
+    row_length = len(twoD_Array)
+    for row in range(row_length):
+        for col in range(len(twoD_Array[row])):
+            if twoD_Array[row][col] == keyword[0]:
+                occurences += count_Occurences_From(row, col, twoD_Array, keyword[1:])
+    return occurences
+
+def count_Occurences_From(cur_row, cur_col, twoD_Array, keyword):
+    if keyword == "":
+        return 1
+    
+    occurences = 0
+    for direction, dir_row, dir_col in directions:
+        new_row = cur_row + dir_row
+        new_col = cur_col + dir_col
+        if twoD_Array[new_row][new_col] == keyword[0]:
+            occurences += count_Occurences_From(new_row, new_col, twoD_Array, keyword[1:])
+            
+    return occurences
+
+my_map = """
++------------+
+|xxPYTHONxxxx|
+|xxYxxxxxxxxx|
+|xxTHONxxPYTH|
+|xxxxxxxxxxNO|
++------------+
+"""
+
+
+occurence = count_Win_Occurence(my_map, "PYTHON")
+print(occurence) #
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 Given a 2D graph, counts the occurence of the word "WIN".
 All directions.
-
-Author: Michael Cowie
 """
 
 directions = [('N' , -1, 0), ('NE', -1, 1),
