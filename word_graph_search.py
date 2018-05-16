@@ -32,7 +32,7 @@ def count_Occurences_From(cur_row, cur_col, twoD_Array, keyword):
             
     return occurences
 
-my_map = """
+my_map = """\
 +------------+
 |xxPYTHONxxxx|
 |xxYxxxxxxxxx|
@@ -90,7 +90,7 @@ def count_Occurences_From(row, col, user_map, goal_string = "IN", direction_list
             occurences += count_Occurences_From(new_row, new_col, user_map, goal_string[1:], direction_stack)
     return occurences
 
-my_map = """
+my_map = """\
 +------------+
 |xxxxWxxxxxxx|
 |xxxNIIxxxxxx|
