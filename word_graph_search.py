@@ -43,7 +43,7 @@ my_map = """\
 
 
 occurence = count_Keyword_Occurence(my_map, "PYTHON")
-print(occurence) #
+print(occurence) #3
 
 
 
