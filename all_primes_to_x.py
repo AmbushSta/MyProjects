@@ -5,12 +5,11 @@ Author: Michael Cowie
 import math
 
 def all_primes(upper_limit):
-    if upper_limit < 2:
-        return
-    for a_prime in get_primes():
-        if a_prime > upper_limit:
-            return
-        print(a_prime)
+    if upper_limit > 2:
+        for a_prime in get_primes():
+            if a_prime > upper_limit:
+                return
+            print(a_prime)
         
 def get_primes():
     current_number = 2
