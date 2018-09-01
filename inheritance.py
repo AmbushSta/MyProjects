@@ -2,13 +2,13 @@ class Vehicle():
     
     def __init__(self):
         self.is_a_vehicle = True
-        self.print_myself = {
+        self.print_myself = {    # Map each object to the correct method
             Car : self.car_print,
             Bike : self.bike_print   
         }
 
     def __str__(self):
-        return self.print_myself[type(self)]()
+        return self.print_myself[type(self)]()  # Reduce if statements by mapping
     
     def car_print(self):
         return "I am a car!"    
@@ -19,8 +19,8 @@ class Vehicle():
 class Bike(Vehicle):
     
     def __init__(self):
-        super().__init__()
-        self.wheel_count = 2
+        super().__init__()     # Calling parent __init__ method
+        self.wheel_count = 2   
         
 class Car(Vehicle):
     
