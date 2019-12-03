@@ -9,7 +9,6 @@ help(re)
 
 For visual learning, https://regexr.com/
 """
-
 import re
 
 pattern1 = "The quick brown fox jump over the lazy dog"
