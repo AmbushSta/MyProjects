@@ -1,9 +1,13 @@
 """
 Link to useful cheatsheet:
 https://github.com/tartley/python-regex-cheatsheet/blob/master/cheatsheet.rst
+
 or
+
 import re
 help(re) 
+
+For visual learning, https://regexr.com/
 """
 
 import re
