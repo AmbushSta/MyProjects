@@ -29,7 +29,7 @@ print(re.search("^[a-zA-Z\s]*$", pattern1)) #The entire string
 #using match       Attempts to match from the beginning of the string
 print(re.match("[a-zA-Z\d]{3}", abc123)) #abc
 print(re.match("bc123", abc123)) #fails
-print(re.match("a(a|b)c",abc123)) #abc, not to be confused with "aa|bc"
+print(re.match("a(a|b)c", abc123)) #abc, not to be confused with "aa|bc"
 
 #using findall
 print(re.findall("\d{2}", pattern2))        #['12', '14', '44', '56', '77', '88']
@@ -46,3 +46,20 @@ print(re.split("\s+", space_split)) #['a', 'b', 'c', 'd']
 x = "<em>Hello World</em>"
 print(re.match("<.+?>", x).group(0)) # non-greedy. Matches "<em>"
 print(re.match("<.+>", x).group(0)) #greedy. Matches "<em>Hello World</em>"
+
+# Search and replace using capturing groups can be very useful when given a known data structure for a lot of data that needs to be transferred to something new.
+# Take an example where you're given a large file with two seperated key values by a space and need to pass them into a new function.
+keys = """key1 key2
+key2 key3
+key4 key5
+"""
+
+for key_group in keys.split('\n'):
+    print(re.sub('(\w*) (\w*)', 'generic_function_name(\'\g<1>\', \'\g<2>\'),', key_group))
+
+# will output
+# generic_function_name('key1', 'key2'),
+# generic_function_name('key2', 'key3'),
+# generic_function_name('key4', 'key5'),
+
+
